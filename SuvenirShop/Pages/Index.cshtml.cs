@@ -44,6 +44,7 @@ public class IndexModel : PageModel
             var cardCVV = Request.Form["card-cvv"];
             var cardExpireDate = Request.Form["card-expire-date"];
 
+
             _logger.LogInformation($"Address: {address}, FullName: {fullName}, CardNumber: {cardNumber}, CardCVV: {cardCVV}, CardExpireDate: {cardExpireDate}");
             return RedirectToPage("/Index");
         }
